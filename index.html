@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="input-wrapper">
+          <label for="name">Имя</label>
+          <input
+            type="text"
+            class="user-name"
+            name="name"
+            id="name"
+            placeholder="Николай"
+          />
+          <p class="error-name">
+            Имя должно начинатеся с заглавной буквы, и быть не меньше двух букв
+          </p>
+        </div>
+        <div class="input-wrapper">
+          <label for="surname">Фамилия</label>
+          <input
+            type="text"
+            class="user-surname"
+            name="surname"
+            id="surname"
+            placeholder="Ковалев"
+          />
+          <p class="error-surname">
+            Фамилия должна начинаться с заглавной буквы, и быть не меньше двух
+            букв
+          </p>
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Почта</label>
+          <input
+            type="text"
+            class="user-email"
+            name="email"
+            id="email"
+            placeholder="Examp1@gmail.com"
+          />
+          <p class="error-email">
+            (Большие и маленькие буквы, цифры > 4)@(не менее двух
+            букв).(com,ua,dp,uk)
+          </p>
+        </div>
+        <div class="input-wrapper">
+          <label for="user-select">Товары</label>
+          <select name="goods" id="user-select" class="user-select" required>
+            <optgroup label="Бытовая техника">
+              <option>Мясорубки</option>
+              <option>Блендеры</option>
+              <option>Мультиварки</option>
+            </optgroup>
+            <optgroup label="Офисная техника">
+              <option>Принтеры</option>
+              <option>Сканеры</option>
+              <option>МФУ</option>
+            </optgroup>
+            <optgroup label="Товары для дома">
+              <option>Диваны</option>
+              <option>Кровати</option>
+              <option>Столы</option>
+            </optgroup>
+            <optgroup label="Довары для детей">
+              <option>Мягкие игрушки</option>
+              <option>Настольные игры</option>
+              <option>Развивающие книги</option>
+            </optgroup>
+            <optgroup label="Товары для отдыха">
+              <option>Мангалы</option>
+              <option>Барбекю</option>
+              <option>Бассейны</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="input-wrapper">
+          <label for="phone">Номер телефона</label>
+          <input
+            type="text"
+            class="user-phone"
+            id="phone"
+            name="phone"
+            placeholder="+38099 456 87 20"
+          />
+          <p class="error-phone">
+            Введите номер телефона в формате +380ХХ ХХХ ХХ ХХ
+          </p>
+        </div>
+        <div class="input-wrapper">
+          <label for="robot"
+            >Введите буквы без пробелов<span class="robot-text"></span
+          ></label>
+          <input type="text" name="robot" id="robot" class="robot-check" />
+          <p class="error-robot">Проверте пожалуйста правильность ввода</p>
+        </div>
+        <button type="submit" id="submit">Заказать</button>
+      </form>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

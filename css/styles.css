@@ -1,0 +1,185 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+dl {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: linear-gradient(to right, rgb(31, 31, 31), rgb(54, 54, 54), rgb(82, 82, 82))
+}
+
+.container {
+    width: 1200px;
+    height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 36px;
+    width: 460px;
+    height: 620px;
+    /* outline: 3px solid rgba(85, 85, 85, 0.5); */
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px rgb(228, 228, 228);
+}
+
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 72px;
+}
+
+input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid rgba(85, 85, 85, 0.5);
+    padding: 4px 12px;
+    font-size: 20px;
+    outline: none;
+    caret-color: rgba(85, 85, 85, 0.5);
+    ;
+}
+
+input:focus-within,
+select:focus-within {
+    border: 2px solid rgb(229, 141, 17);
+}
+
+select:focus {
+    outline: none;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid rgba(85, 85, 85, 0.5);
+    padding: 4px 12px;
+    font-size: 20px;
+}
+
+button {
+    width: 180px;
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(229, 141, 17);
+    padding: 4px 8px;
+    font-size: 20px;
+    margin: 24px auto 0px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+}
+
+button:hover {
+    background-color: rgb(191, 112, 1);
+    color: white;
+    box-shadow: 0 0 6px rgb(191, 112, 1);
+
+}
+
+button:active {
+    box-shadow: none;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.error-name,
+.error-surname,
+.error-robot,
+.error-email {
+    font-size: 10px;
+    color: red;
+    display: none;
+    margin-top: 4px;
+
+}
+
+.error-phone {
+    display: none;
+    font-size: 10px;
+    color: red;
+    margin-top: 4px;
+
+}
+
+.robot-text {
+    margin-left: 8px;
+    font-size: 20px;
+    color: rgb(167, 6, 192);
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oreder-wrapper {
+    background-color: white;
+    width: 360px;
+    height: 240px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 12px rgb(228, 228, 228);
+}
+
+.order-text {
+    font-size: 24px;
+}
+
+.order-number {
+    font-size: 28px;
+}
+
+.back-to-oreder-btn {
+    width: 180px;
+    height: 36px;
+    padding: 4px 8px;
+    font-size: 16px;
+}
