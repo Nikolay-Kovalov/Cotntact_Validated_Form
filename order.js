@@ -24,7 +24,7 @@ const arr = [];
 function renderOrder() {
     root.innerHTML = `
      <div class="oreder-wrapper">
-          <p class="order-text">Спасибо за заказ</p>
+          <p class="order-text">Спасибо за заказ!</p>
           <p class="order-text">
             Ваш заказ № <span class="order-number">${load('order').orderNumber}</span>
           </p>
